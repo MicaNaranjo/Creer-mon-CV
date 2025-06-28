@@ -4,85 +4,109 @@
     <meta charset="UTF-8">
     <title>CV Développeur Web</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<div class="cv-wrapper">
+
     <div class="header">
-        <img src="++++++++++++++++++++" alt="Photo de moi">
+        <a href="./assets/img/photo.jpg" target="_blank">
+            <img src="./assets/img/photo.jpg" alt="Photo de moi">
+        </a>
         <div class="header-info">
             <h1>Michael Naranjo</h1>
             <p>Développeur Web et Web Mobile</p>
             <div class="contact">
-                <p><i class="fas fa-envelope"></i> Mail &nbsp;
-                <i class="fas fa-map-marker-alt"></i> Adresse &nbsp;
-                <i class="fas fa-phone"></i> Téléphone &nbsp;
-                <i class="fas fa-car"></i> Permis B</p>
+                <p>
+                    <i class="fas fa-envelope"></i> <a href="mailto:michael@mail.com">Mail</a> &nbsp;
+                    <i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Paris" target="_blank">Adresse</a> &nbsp;
+                    <i class="fas fa-phone"></i> <a href="tel:0666666666">Téléphone</a> &nbsp;
+                    <i class="fas fa-car"></i> Permis B
+                </p>
             </div>
         </div>
     </div>
 
-    <aside class="container">
-        <div class="left">
+    <div class="container">
+        <aside class="left">
             <h2>Compétences</h2>
             <p><strong>HTML</strong> <span class="stars">★★★★★</span></p>
             <p><strong>CSS</strong> <span class="stars">★★★★☆</span></p>
             <p><strong>Javascript</strong> <span class="stars">☆☆☆☆☆</span></p>
             <p><strong>PHP</strong> <span class="stars">☆☆☆☆☆</span></p>
+
+            <div class="langues">
+                <h2>Langues</h2>
+                <p><strong>Français</strong> - Langue maternelle</p>
+                <p><strong>Anglais</strong> - Professionnel</p>
+                <p><strong>Espagnol</strong> - Notions</p>
+            </div>
+
+            <div class="qualites">
+                <h2>Qualités</h2>
+                <ul>
+                    <li>Esprit d'équipe</li>
+                    <li>Autonomie</li>
+                    <li>Organisation</li>
+                    <li>Créativité</li>
+                </ul>
+            </div>
+
+            <div class="centres">
+                <h2>Centres d'intérêt</h2>
+                <ul>
+                    <li>Mes enfants</li>
+                    <li>Rugby</li>
+                    <li>Sport en salle</li>
+                    <li>Bras de fer</li>
+                    <li>Gaming</li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="right">
+            <h2>Profil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio!</p>
+
+            <h2>Formations</h2>
+            <div class="card">
+                <p><strong>Titre Professionnel DWWM</strong><br>Centre Européen de Formation<br>2025/2026</p>
+            </div>
+            <div class="card">
+                <p><strong>Baccalauréat</strong><br>Lycée de Prades<br>2012</p>
+            </div>
+
+            <h2>Stages</h2>
+            <div class="card">
+                <p><strong>Gestionnaire de paye</strong><br>Société Truc & Machin<br>Mars 2022 – Avril 2022</p>
+            </div>
+            <div class="card">
+                <p><strong>Agent d'accueil</strong><br>Mairie de la ville<br>Janvier 2021 – Février 2021</p>
+            </div>
+
+            <h2>Expérience professionnelle</h2>
+            <div class="card">
+                <p><strong>Clerc de notaire</strong><br>Différentes offices notariales<br>2017 – 2025</p>
+            </div>
+            <div class="card">
+                <p><strong>Chauffeur - Livreur</strong><br>Transport Nenis & Fils<br>Septembre 2021 – Décembre 2021</p>
+            </div>
+            <div class="card">
+                <p><strong>Préparateur de commandes</strong><br>Le Slip Français<br>Janvier 2000 – Septembre 2000</p>
+            </div>
         </div>
-        <div class="langues">
-            <h2>Langues</h2>
-            <p><strong>Français</strong> - Langue maternelle</p>
-            <p><strong>Anglais</strong> - Professionnel</p>
-            <p><strong>Espagnol</strong> - Notions</p>
-        </div>
-
-        <div class="qualites">
-            <h2>Qualités</h2>
-            <ul>
-                <li>Esprit d'équipe</li>
-                <li>Autonomie</li>
-                <li>Organisation</li>
-                <li>Créativité</li>
-            </ul>
-        </div>
-
-        <div class="centres">
-            <h2>Centres d'intérêt</h2>
-            <ul>
-                <li>Mes enfants</li>
-                <li>Rugby</li>
-                <li>Sport en salle</li>
-                <li>Bras de fer</li>
-                <li>Gaming</li>
-            </ul>
-        </div>
-    </aside>
-
-    <div class="right">
-        <h2>Profil</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio!</p>
-
-        <h2>Formations</h2>
-        <p><strong>Titre Professionnel DWWM</strong><br> Centre Européen de Formation<br>2025/2026</p>
-        <p><strong>Baccalauréat</strong><br> Lycée de Prades<br>2012</p>
-
-        <h2>Stages</h2>
-        <p><strong>Gestionnaire de paye</strong><br> Société Truc & Machin<br>Mars 2022 – Avril 2022</p>
-        <p><strong>Agent d'accueil</strong><br> Mairie de la ville<br>Janvier 2021 – Février 2021</p>
-
-        <h2>Expérience professionnelle</h2>
-        <p><strong>Clerc de notaire</strong><br> Différentes offices<br><time datetime="2017-2025">2017 – 2025</time></p>
-        <p><strong>Chauffeur - Livreur</strong><br> Transport Nenis & Fils<br>Septembre 2021 – Décembre 2021</p>
-        <p><strong>Préparateur de commandes</strong><br> Le Slip Français<br>Janvier 2000 – Septembre 2000</p>
     </div>
 
-  <div class="footer">
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-github"></i>
-    <i class="fab fa-facebook"></i>
-    <time datetime="06-28-2025">Mis à jour le : 28/06/2025</time>
-  </div>
+    <div class="footer">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-facebook"></i>
+        <time datetime="2025-06-28">Mis à jour le : 28/06/2025</time>
+    </div>
+
+</div>
 
 </body>
 </html>

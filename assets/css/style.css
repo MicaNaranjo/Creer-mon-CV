@@ -1,8 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f5f5f5;
+    display: flex;
+    justify-content: center;
 }
+
+.cv-wrapper {
+    width: 1160px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     background-color: #4eb1ba;
     color: white;
@@ -10,45 +24,92 @@ body {
     display: flex;
     align-items: center;
 }
+
 .header img {
     border-radius: 50%;
     width: 100px;
     margin-right: 20px;
+    border: 4px solid white;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
 }
-.header-info h1 {
-    margin: 0;
+.header img:hover {
+    transform: scale(1.05);
 }
-.contact {
-    margin-top: 10px;
+.header-info {
+    flex: 1;
+    margin: 10px auto 0;
     font-size: 0.9em;
+    text-align: center;
 }
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
 .container {
     display: flex;
 }
+
 .left {
     width: 30%;
-    background: white;
     padding: 20px;
+    background: white;
 }
+
 .right {
     width: 70%;
     padding: 20px;
 }
+
+.right p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
 h2 {
     color: #4eb1ba;
     margin-top: 30px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
+
 ul {
     padding-left: 20px;
 }
+
 .stars {
     color: #4eb1ba;
 }
+
 .langues, .qualites, .centres {
     margin-top: 20px;
 }
+
+/* Cartes d'effet survol */
+.card {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.card:hover {
+    background: #e0f7fa;
+}
+
+.card:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #4eb1ba;
+}
+
+/* Footer */
 .footer {
     background-color: #4eb1ba;
     color: white;
@@ -56,6 +117,13 @@ ul {
     padding: 15px;
     margin-top: 20px;
 }
+
 .footer i {
     margin: 0 10px;
-    }
+    transition: opacity 0.3s ease;
+}
+
+.footer i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
